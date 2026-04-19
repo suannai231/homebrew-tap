@@ -5,21 +5,21 @@
 class Tally < Formula
   desc "The AI principal engineer for every developer — quality gate for AI-generated code"
   homepage "https://tally.sh"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/suannai231/tally-releases/releases/download/v0.5.0/tally_0.5.0_darwin_amd64.tar.gz"
-      sha256 "915d0aa4d744aa48f3f4dee24bb83aee2f4b7f06e13d19a119eb92ddaef935de"
+      url "https://github.com/suannai231/tally-releases/releases/download/v0.5.1/tally_0.5.1_darwin_amd64.tar.gz"
+      sha256 "a6b016bbd7b5d62980c3d8295c0c5031b03ea5577290bf63ef21842f3f1c84f3"
 
       define_method(:install) do
         bin.install "tally"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/suannai231/tally-releases/releases/download/v0.5.0/tally_0.5.0_darwin_arm64.tar.gz"
-      sha256 "6aee026ec05f6aa34f56e6571f3464e21911e5d455bfef02a577d267165bf285"
+      url "https://github.com/suannai231/tally-releases/releases/download/v0.5.1/tally_0.5.1_darwin_arm64.tar.gz"
+      sha256 "71136e03ad2a9540eab7f12f57f9f459c5f8e2d9c7cab41ad6f9585d25a24f5d"
 
       define_method(:install) do
         bin.install "tally"
@@ -29,15 +29,15 @@ class Tally < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suannai231/tally-releases/releases/download/v0.5.0/tally_0.5.0_linux_amd64.tar.gz"
-      sha256 "d59d0922ac06a616b43b2d4e92538fb33fc55e94757976a0dc3ead35cd06f3e3"
+      url "https://github.com/suannai231/tally-releases/releases/download/v0.5.1/tally_0.5.1_linux_amd64.tar.gz"
+      sha256 "b3c1c55167b811d048d8ccf828ff7b7a99314cd582b849d8f135d90d88454a90"
       define_method(:install) do
         bin.install "tally"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/suannai231/tally-releases/releases/download/v0.5.0/tally_0.5.0_linux_arm64.tar.gz"
-      sha256 "90cb86f486d70cda48e0e7c8d75edf77cea19d006e1b550634517bfecefd232a"
+      url "https://github.com/suannai231/tally-releases/releases/download/v0.5.1/tally_0.5.1_linux_arm64.tar.gz"
+      sha256 "1c313aab8be9ee15290133f038a2d2005c4c0c939b9adb806a2e6e8d2c630e39"
       define_method(:install) do
         bin.install "tally"
       end
